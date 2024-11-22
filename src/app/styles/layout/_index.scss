@@ -1,0 +1,6 @@
+@use "../declarations";
+
+html {
+    font-family: Montserrat, Arial, sans-serif;
+    color: declarations.$colorText;
+}
