@@ -1,0 +1,10 @@
+@use "@styles/declarations";
+
+.button {
+    @include declarations.font(18px, #ffffff, 700, 22px);
+
+    padding: 16px 30px;
+    border-radius: 10px;
+
+    background-color: declarations.$colorPrimary;
+}

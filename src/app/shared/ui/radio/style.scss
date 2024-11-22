@@ -1,0 +1,27 @@
+@use "@styles/declarations";
+
+.radio {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid declarations.$colorText;
+    border-radius: 50%;
+
+    transition: declarations.$transition;
+
+    @media (hover: hover) {
+        &:hover {
+            border-color: declarations.$colorPrimary;
+        }
+    }
+
+    &:has(input:checked) {
+        background-color: declarations.$colorPrimary;
+        border-color: declarations.$colorPrimary;
+    }
+
+    input {
+        display: none;
+    }
+}

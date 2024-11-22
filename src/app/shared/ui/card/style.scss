@@ -1,0 +1,8 @@
+@use "@styles/declarations";
+
+.card {
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color: declarations.$colorBgBase;
+}

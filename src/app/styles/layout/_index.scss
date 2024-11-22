@@ -4,3 +4,19 @@ html {
     font-family: Montserrat, Arial, sans-serif;
     color: declarations.$colorText;
 }
+
+body {
+    padding: declarations.$paddingYPage declarations.$paddingXPage;
+}
+
+.main {
+    max-width: declarations.$widthPage;
+    margin: 0 auto;
+}
+
+.page-title {
+    margin-bottom: 20px;
+
+    font-size: 48px;
+    color: declarations.$colorText;
+}
