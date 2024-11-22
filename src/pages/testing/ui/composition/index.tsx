@@ -1,11 +1,10 @@
 import { useRef, useState } from "react";
 
-import { ResultsTab } from "@/pages/testing/ui/results-tab";
-
 import { QUESTIONS, type Question } from "@/entities/test";
 
 import { prepareTestData } from "../../lib";
 import type { CheckAnswerHandler, ResultsAnswer } from "../../types.ts";
+import { ResultsTab } from "../results-tab";
 import { TestTab } from "../test-tab";
 
 export const TestingPage = () => {

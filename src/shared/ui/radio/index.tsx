@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 
 import "./style.scss";
 import type { Props } from "./types.ts";
