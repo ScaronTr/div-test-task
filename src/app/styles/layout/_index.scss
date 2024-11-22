@@ -15,8 +15,11 @@ body {
 }
 
 .page-title {
-    margin-bottom: 20px;
+    @include declarations.font(48px, $height: 59px);
 
-    font-size: 48px;
-    color: declarations.$colorText;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    @include declarations.font(24px, $height: 34px);
 }

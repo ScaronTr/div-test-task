@@ -15,8 +15,6 @@
     line-height: 20px;
     font-weight: 800;
 
-    transition: declarations.$transition;
-
     .progress-bar__min-label,
     .progress-bar__max-label {
         position: absolute;
@@ -38,6 +36,8 @@
         border-radius: inherit;
 
         background-color: declarations.$colorPrimary;
+
+        transition: declarations.$transition;
 
         .progress-bar-runner__counter {
             position: absolute;

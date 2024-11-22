@@ -10,9 +10,13 @@
 
     transition: declarations.$transition;
 
+    cursor: auto;
+
     @media (hover: hover) {
-        &:hover {
+        &:not(&:has(input:disabled)):hover {
             border-color: declarations.$colorPrimary;
+
+            cursor: pointer;
         }
     }
 

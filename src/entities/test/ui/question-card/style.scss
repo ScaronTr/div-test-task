@@ -1,0 +1,46 @@
+@use "@styles/declarations";
+
+.test-card {
+    min-height: 528px;
+
+    .test-card__title {
+        @include declarations.font(24px, $weight: 700, $height: 29px);
+        margin-bottom: 20px;
+    }
+}
+
+.test-card-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .test-card-answers-item {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+
+        @media (hover: hover) {
+            &:not(&:has(input:disabled)):has(label:hover):hover {
+                .radio {
+                    border-color: declarations.$colorPrimary;
+                }
+            }
+
+            &:has(input:disabled):hover {
+                cursor: auto;
+
+                .test-card-answers-item__label {
+                    cursor: auto;
+                }
+            }
+        }
+
+        .radio {
+            flex-shrink: 0;
+        }
+
+        .test-card-answers-item__label {
+            line-height: 20px;
+        }
+    }
+}

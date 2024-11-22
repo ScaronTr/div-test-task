@@ -1,0 +1,21 @@
+@use "@styles/declarations";
+
+.answer-card {
+    &_success {
+        background-color: declarations.$colorSuccess;
+    }
+
+    &_fail {
+        background-color: declarations.$colorDanger;
+    }
+
+    .answer-card__title {
+        @include declarations.font(20px, $weight: 700);
+
+        margin-bottom: 15px;
+    }
+
+    .answer-card__description {
+        @include declarations.font(16px, $height: 22px);
+    }
+}

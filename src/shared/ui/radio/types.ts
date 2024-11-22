@@ -4,4 +4,6 @@ export type Props = {
     checked: boolean;
     onChange: ChangeEventHandler<HTMLInputElement>;
     name: string;
+    id?: string;
+    disabled?: boolean;
 };
